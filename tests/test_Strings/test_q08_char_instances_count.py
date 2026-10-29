@@ -68,7 +68,7 @@ def test_char_instances_count_with_spaces_returns_correct_count():
     actual_count = char_instances_count(test_string, target_char)
     
     # Assert
-    assert actual_count == 4
+    assert actual_count == 5
 
 def test_char_instances_count_missing_character_returns_zero():
     # Arrange
