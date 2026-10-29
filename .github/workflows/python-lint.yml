@@ -23,3 +23,7 @@ jobs:
         flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
         # Exit-zero treats all other errors as warnings so PR doesn't fail immediately
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+    - name: Run Unit Tests with Pytest
+      run: |
+        python -m pip install pytest
+        pytest
